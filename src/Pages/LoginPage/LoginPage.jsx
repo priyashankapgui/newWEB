@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Navbar(props) {
+function LoginPage(props) {
     return (
         <div></div>
     );
 }
 
-export default Navbar;
+export default LoginPage;
