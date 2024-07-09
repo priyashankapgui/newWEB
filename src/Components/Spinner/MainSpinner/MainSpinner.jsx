@@ -1,9 +1,9 @@
 import React from "react";
 import BarLoader from "react-spinners/BarLoader";
-import './MainSpiner.css';
+import './MainSpinner.css';
 import greenLeafLogo from '../../../Assets/favicon.png';
 
-const MainSpiner = ({ loading }) => {
+const MainSpinner = ({ loading }) => {
    
     return (
         <div className="sweet-loading" style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", height: "80vh", }}>
@@ -24,4 +24,4 @@ const MainSpiner = ({ loading }) => {
     );
 };
 
-export default MainSpiner;
+export default MainSpinner;
