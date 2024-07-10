@@ -1,8 +1,13 @@
 import React from 'react';
+import Layout from '../../Components/Layout/Layout';
 
-function HomePage(props) {
+function HomePage() {
     return (
-        <div></div>
+        <>
+            <Layout>
+
+            </Layout>
+        </>
     );
 }
 

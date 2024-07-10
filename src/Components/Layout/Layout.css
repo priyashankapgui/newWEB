@@ -6,23 +6,13 @@
   font-family: 'Poppins', sans-serif;
 }
 
-
-#navcontent {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 999;
-}
-
-#bodycontent {
-  min-height: 40vh;
-  padding-top: 25vh;
-}
-
-#footercontent {
-  min-height: 10vh;
-}
-
-.layout {
+.BodySection {
+  flex: 1;
   background-color: #fafafa;
+  margin-bottom: 10px;
+
+}
+
+.FooterSection {
+  margin-top: 80vh;
 }
