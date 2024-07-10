@@ -1,29 +1,26 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Layout.css";
+import ConnectionWarning from '../Alerts/ConnectionWarning/ConnectionWarning';
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
-import Searchbar from "../Searchbar/Searchbar";
-import { SearchResultsList } from "../Searchbar/SearchResultsList";
-import Topheader from "../Topheader/Topheader";
-import ConnectionWarning from "../Alerts/ConnectionWarning";
+
 
 export default function Layout({ children }) {
-  const [results, setResults] = useState([]);
-
   return (
     <div className="layout">
-      <div id="wrapper">
-        <div id="navcontent">
-          <ConnectionWarning/>
-          <Navbar />
-          <Searchbar setResults={setResults}  />
-          {results.length > 0 && <SearchResultsList results={results} />}
-        </div>
+      <ConnectionWarning />
+      <div className="TopNavSection">
+        <Navbar />
+      </div>
+
+      <div className="BodySection">
         {children}
-        <div id="footercontent">
-          <Footer />
-        </div>
+      </div>
+
+      <div className="FooterSection">
+        <Footer />
       </div>
     </div>
+
   );
 }

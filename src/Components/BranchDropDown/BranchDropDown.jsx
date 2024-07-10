@@ -1,15 +1,15 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { IoMdArrowDropdown } from "react-icons/io";
+import { MdEditLocationAlt } from "react-icons/md";
 import axios from 'axios';
-import './BranchDropDown.css';
+import './BranchDropdown.css';
 
-const BranchDropDown = ({ id, name, height, width, onChange, editable, borderRadius, marginTop }) => {
+const BranchDropdown = ({ id, name, height, width, onChange, editable, borderRadius, marginTop }) => {
     const [selectedOption, setSelectedOption] = useState('');
     const [isOpen, setIsOpen] = useState(false);
     const [options, setOptions] = useState([]);
     const dropdownRef = useRef(null);
     const placeholder = "Select a branch";
-    
+
 
     useEffect(() => {
         axios.get('http://localhost:8080/branchesWeb')
@@ -17,8 +17,8 @@ const BranchDropDown = ({ id, name, height, width, onChange, editable, borderRad
                 setOptions(response.data);
                 const savedBranchName = localStorage.getItem('selectedBranch');
                 const storedBranchName = localStorage.getItem('selectedBranch');
-console.log('branch', { branchName: storedBranchName });
-              
+                console.log('branch', { branchName: storedBranchName });
+
                 if (savedBranchName) {
                     setSelectedOption(savedBranchName);
                 }
@@ -30,8 +30,8 @@ console.log('branch', { branchName: storedBranchName });
         setSelectedOption(option.branchName);
         localStorage.setItem('selectedBranch', option.branchName);
         localStorage.setItem('selectedBranchId', option.branchId);
-        
-      
+
+
         onChange(option);
         setIsOpen(false);
     };
@@ -74,7 +74,7 @@ console.log('branch', { branchName: storedBranchName });
                 tabIndex={editable ? 0 : -1}
             >
                 <span>{selectedOption || placeholder}</span>
-                <IoMdArrowDropdown className="dropdown-arrow" />
+                <MdEditLocationAlt size='16px' className="dropdown-arrow" />
             </div>
             {isOpen && (
                 <div className="dropdown-list">
@@ -93,4 +93,4 @@ console.log('branch', { branchName: storedBranchName });
     );
 };
 
-export default BranchDropDown;
+export default BranchDropdown;
