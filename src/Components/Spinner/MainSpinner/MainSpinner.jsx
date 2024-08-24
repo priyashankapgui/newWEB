@@ -1,14 +1,14 @@
 import React from "react";
 import BarLoader from "react-spinners/BarLoader";
 import './MainSpinner.css';
-import greenLeafLogo from '../../../Assets/favicon.png';
+// import greenLeafLogo from '../../../Assets/favicon.png';
 
 const MainSpinner = ({ loading }) => {
    
     return (
         <div className="sweet-loading" style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", height: "80vh", }}>
             <div className="SpinnerSystem">
-               <img src={greenLeafLogo} alt="Green Leaf Logo" className="spinerImage"/>
+               {/*<img src={greenLeafLogo} alt="Green Leaf Logo" className="spinerImage"/>*/}
             </div>
             <BarLoader
                 color="#36d06a"
