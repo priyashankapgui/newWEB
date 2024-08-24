@@ -1,84 +1,45 @@
-// import React from "react";
-// import secureLocalStorage from "react-secure-storage";
-// import { Link } from "react-router-dom";
-// import { SiFacebook } from "react-icons/si";
-// import { FaYoutube } from "react-icons/fa6";
-// import { RiInstagramFill } from "react-icons/ri";
-// import logo from "../../Assets/Green Leaf Super.png";
-// import "./Footer.css";
-//
-// const Footer = () => {
-//   const token = secureLocalStorage.getItem("accessToken");
-//
-//   return (
-//     <footer className="footer">
-//       <div className="footer_section_padding">
-//         <div className="footer-links">
-//           <div className="logoName">
-//             <div>
-//               <img src={logo} alt="logo" className="logoImg"></img>
-//             </div>
-//             <div>
-//               <h2>Green Leaf</h2>
-//             </div>
-//           </div>
-//
-//           <Link to="/Contact">
-//             <div className="footer-links-div">
-//               <h4>Contact Us</h4>
-//
-//               <p>091-365 4576</p>
-//               <p>
-//                 No:83/05 1 Galle Face, <br /> Colombo 2, Sri Lanka
-//               </p>
-//               <p>greenleaf@gmail.com</p>
-//             </div>{" "}
-//           </Link>
-//
-//           <div className="footer-links-div">
-//             <h4>Account</h4>
-//             {token ? (
-//               <Link to="/my-account">
-//                 <p>My Account</p>
-//               </Link>
-//             ) : (
-//               <>
-//                 <Link to="/login">
-//                   <p>Login</p>
-//                 </Link>
-//                 <Link to="/signup">
-//                   <p>Register</p>
-//                 </Link>
-//               </>
-//             )}
-//           </div>
-//
-//           <div className="footer-links-div">
-//             <h4>Follow Us</h4>
-//             <div className="socialmedia">
-//               <div>
-//                 <a href="https://www.facebook.com/">
-//                   <SiFacebook size="24px" />
-//                 </a>
-//               </div>
-//
-//               <div>
-//                 <a href="https://www.youtube.com/">
-//                   <FaYoutube size="24px" />
-//                 </a>
-//               </div>
-//
-//               <div>
-//                 <a href="https://www.instagram.com/">
-//                   <RiInstagramFill size="24px" />
-//                 </a>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </footer>
-//   );
-// };
-//
-// export default Footer;
+import React from 'react';
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import './Footer.css';
+
+function Footer() {
+    return (
+        <footer className="footer">
+            <div className="footer-content">
+                <div className="footer-section about">
+                    <h2>About GreenLeaf</h2>
+                    <p>
+                        GreenLeaf is your one-stop supermarket for all your needs. We provide fresh and high-quality products at the best prices.
+                    </p>
+                </div>
+                <div className="footer-section contact">
+                    <h2>Contact Us</h2>
+                    <div className="contact-details-branch1">
+                        <p>Email: galle@greenleaf.com</p>
+                        <p>Phone: 0912256876</p>
+                        <p>Address: No 25, Karapitiya Rd, Galle</p>
+                    </div>
+                    <div className="contact-details-branch2">
+                        <p>Email: kaluthara@greenleaf.com</p>
+                        <p>Phone: 034 2256734</p>
+                        <p>Address: No 10, North Kaluthara</p>
+                    </div>
+                </div>
+                <div className="footer-section social">
+                    <h2>Follow Us</h2>
+                    <div className="social-icons">
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+                    </div>
+                </div>
+            </div>
+            <div className="footer-bottom">
+                &copy; {new Date().getFullYear()} GreenLeaf | All Rights Reserved
+            </div>
+        </footer>
+    );
+}
+
+export default Footer;

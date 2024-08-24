@@ -1,1 +1,102 @@
-/*Nav bar Css*
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fffefe;
+    padding: 1rem 2rem;
+    color: #2c3e50;
+}
+
+.mainNav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.greenleaf-logo {
+    width: 5em;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.navbar-links li {
+    margin: 0 1rem;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-size: 1.1rem;
+}
+
+.navbar-links a:hover {
+    color: #2ecc71;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.branch-select {
+    margin-right: 1rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 1px solid #2c3e50;
+    background-color: #ededed;
+    color: #2c3e50;
+    font-size: 1rem;
+}
+
+.branch-select option {
+    background-color: #ededed;
+    color: #2c3e50;
+}
+
+.branch-select option:hover {
+    color: #2ecc71;
+}
+
+.navbar-login {
+    text-decoration: none;
+    color: #2c3e50;
+    font-size: 1.1rem;
+}
+
+.navbar-login:hover {
+    color: #2ecc71;
+}
+
+.navbar-cart {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.navbar-cart:hover {
+    color: #2ecc71;
+}
+
+.navbar-right {
+    gap: 25px;
+}

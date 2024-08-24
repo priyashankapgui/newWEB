@@ -1,27 +1,26 @@
-// import React, { useState } from "react";
-// import "./Layout.css";
-// import Navbar from "../Navbar/Navbar";
-// import Footer from "../Footer/Footer";
-// import Searchbar from "../Searchbar/Searchbar";
-// import { SearchResultsList } from "../Searchbar/SearchResultsList";
-//
-//
-// export default function Layout({ children }) {
-//   const [results, setResults] = useState([]);
-//
-//   return (
-//     <div className="layout">
-//       <div id="wrapper">
-//         <div id="navcontent">
-//           <Navbar />
-//           <Searchbar setResults={setResults}  />
-//           {results.length > 0 && <SearchResultsList results={results} />}
-//         </div>
-//         {children}
-//         <div id="footercontent">
-//           <Footer />
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
+import React from "react";
+import "./Layout.css";
+import ConnectionWarning from '../Alerts/ConnectionWarning/ConnectionWarning';
+import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
+
+
+export default function Layout({ children }) {
+  return (
+    <div className="layout">
+      <ConnectionWarning />
+      <div className="TopNavSection">
+        <Navbar />
+      </div>
+
+      <div className="BodySection">
+        {children}
+      </div>
+
+      <div className="FooterSection">
+        <Footer />
+      </div>
+    </div>
+
+  );
+}

@@ -18,8 +18,8 @@
 
 .dropdown-selected:focus {
   outline: none; 
-  border: 2px solid #0377A8; 
-  box-shadow: 0 0 5px rgba(3, 119, 168, 0.5); 
+  border: 2px solid #1c9a08; 
+  box-shadow: 0 0 5px rgba(3, 168, 64, 0.5); 
 }
 
 .dropdown-arrow {
@@ -53,6 +53,7 @@
 }
 
 .dropdown-option:hover {
-  background-color: rgba(134, 182, 246, 0.5);
+  background-color: rgba(77, 197, 97, 0.925);
   font-weight: 500;
+  color: #f9f9f9;
 }
