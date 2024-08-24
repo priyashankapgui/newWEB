@@ -6,6 +6,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    justify-content: space-around;
 }
 
 .footer-content {
@@ -16,15 +17,23 @@
     max-width: 1200px;
     margin-bottom: 2rem;
 }
+.footer-section about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+
+
 
 .footer-section {
     flex: 1;
     margin: 1rem;
     min-width: 250px;
-}
-
-.contact-details-branch2 {
-    margin-top: 15px;
 }
 
 .footer-section h2 {
@@ -44,7 +53,7 @@
 
 .social-icons {
     display: flex;
-    justify-content: space-around;
+    gap: 6vw;
     align-items: center;
     margin-top: 1rem;
 }
@@ -52,7 +61,7 @@
 .social-icons a {
     color: #ecf0f1;
     font-size: 1.5rem;
-    margin: 0 0.5rem;
+    margin: 0 rem;
     transition: color 0.3s;
 }
 

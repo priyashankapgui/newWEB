@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaShoppingCart } from 'react-icons/fa';
 import './Navbar.css';
-import BranchDropdown from '../BranchDropdown/BranchDropdown';
+import BranchDropdown from '../BranchDropDown/BranchDropDown';
 import SearchBar from '../Searchbar/Searchbar'
 
 const Navbar = () => {
