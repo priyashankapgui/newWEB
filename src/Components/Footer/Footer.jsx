@@ -9,7 +9,7 @@ function Footer() {
                 <div className="footer-section about">
                     <h2>About GreenLeaf</h2>
                     <p>
-                        GreenLeaf is your one-stop supermarket for all your needs. We provide fresh and high-quality products at the best prices.
+                        GreenLeaf is your one-stop<br/> supermarket for all your needs.
                     </p>
                 </div>
                 <div className="footer-section contact">
@@ -19,11 +19,7 @@ function Footer() {
                         <p>Phone: 0912256876</p>
                         <p>Address: No 25, Karapitiya Rd, Galle</p>
                     </div>
-                    <div className="contact-details-branch2">
-                        <p>Email: kaluthara@greenleaf.com</p>
-                        <p>Phone: 034 2256734</p>
-                        <p>Address: No 10, North Kaluthara</p>
-                    </div>
+                   
                 </div>
                 <div className="footer-section social">
                     <h2>Follow Us</h2>

@@ -24,6 +24,7 @@
 
 .greenleaf-logo {
     width: 5em;
+    animation: rotate3D 5s linear infinite;
 }
 
 .logo-text {
@@ -100,3 +101,14 @@
 .navbar-right {
     gap: 25px;
 }
+
+@keyframes rotate3D {
+    0% {
+      transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    100% {
+      transform: rotateX(0deg) rotateY(360deg) rotateZ(0deg);
+    }
+  }
+
+ 

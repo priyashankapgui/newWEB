@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { MdEditLocationAlt } from "react-icons/md";
 import axios from 'axios';
-import './BranchDropdown.css';
+import './BranchDropDown.css';
 
 const BranchDropdown = ({ id, name, height, width, onChange, editable, borderRadius, marginTop }) => {
     const [selectedOption, setSelectedOption] = useState('');
