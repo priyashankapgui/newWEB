@@ -2,7 +2,9 @@ import React from 'react';
 
 function AboutUsPage(props) {
     return (
-        <div></div>
+        <div>
+            <h1>About Us</h1>
+        </div>
     );
 }
 
