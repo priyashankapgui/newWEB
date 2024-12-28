@@ -14,6 +14,8 @@ function AboutUsPage(props) {
             <span>
                 Hello
                 </span>
+  <button onClick={() => props.history.push('/contact-us')}>Contact Us</button>
+
         </div>
     );
 }
